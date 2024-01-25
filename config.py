@@ -10,8 +10,8 @@ API_HASH = "4e984ea35f854762dcde906dce426c2d"
 # --------------------------------------------------------------
 BOT_TOKEN = getenv("BOT_TOKEN", None)
 MONGO_URL = getenv("MONGO_URL", None)
-OWNER_ID = "6664582540"
-SUPPORT_GRP = "HEROKUFREECC"
-UPDATE_CHNL = "ALLTYPECC"
-OWNER_USERNAME = "iam_daxx"
+OWNER_ID = "6428719458"
+SUPPORT_GRP = "II_4ST_BALE_II"
+UPDATE_CHNL = "I_M_FIGHTER"
+OWNER_USERNAME = "ll4st_MIND_GAMERII"
 
