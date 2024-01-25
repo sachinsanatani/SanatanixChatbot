@@ -6,8 +6,8 @@ from nexichat import nexichat
 
 DEV_OP = [
     [
-        InlineKeyboardButton(text="🥀 ᴏᴡɴᴇʀ 🥀", user_id=OWNER),
-        InlineKeyboardButton(text="✨ ꜱᴜᴘᴘᴏʀᴛ ✨", url=f"https://t.me/{SUPPORT_GRP}"),
+        InlineKeyboardButton(text="🥀 4𝐒𝐓 ᴏᴡɴᴇʀ 🥀", user_id=OWNER),
+        InlineKeyboardButton(text="✨ 4𝐒𝐓 ꜱᴜᴘᴘᴏʀᴛ ✨", url=f"https://t.me/{SUPPORT_GRP}"),
     ],
     [
         InlineKeyboardButton(
