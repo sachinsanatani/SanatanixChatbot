@@ -16,7 +16,7 @@ from nexichat.modules.helpers import CHATBOT_ON, is_admins
 @adminsOnly("can_delete_messages")
 async def chaton_(_, m: Message):
     await m.reply_text(
-        f"ᴄʜᴀᴛ: {m.chat.title}\n**ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴩᴛɪᴏɴ ᴛᴏ ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ ᴄʜᴀᴛʙᴏᴛ.**",
+        f"ᴄʜᴀᴛ: {m.chat.title}\n**ᴄнσσѕє αи σρтισи тσ єиαвℓє/∂ιѕαвℓє ᴄнαтвσт.**",
         reply_markup=InlineKeyboardMarkup(CHATBOT_ON),
     )
     return
