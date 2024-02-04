@@ -11,8 +11,8 @@ async def getid(client, message):
     message_id = message.id
     reply = message.reply_to_message
 
-    text = f"**[ᴍᴇssᴀɢᴇ ɪᴅ:]({message.link})** `{message_id}`\n"
-    text += f"**[ʏᴏᴜʀ ɪᴅ:](tg://user?id={your_id})** `{your_id}`\n"
+    text = f"**[мєѕѕєgє ι∂:]({message.link})** `{message_id}`\n"
+    text += f"**[уσυʀ ι∂:](tg://user?id={your_id})** `{your_id}`\n"
 
     if not message.command:
         message.command = message.text.split()
@@ -29,22 +29,22 @@ async def getid(client, message):
         except Exception:
             return await message.reply_text("ᴛʜɪs ᴜsᴇʀ ᴅᴏᴇsɴ'ᴛ ᴇxɪsᴛ.", quote=True)
 
-    text += f"**[ᴄʜᴀᴛ ɪᴅ:](https://t.me/{chat.username})** `{chat.id}`\n\n"
+    text += f"**[ᴄнαт ι∂:](https://t.me/{chat.username})** `{chat.id}`\n\n"
 
     if (
         not getattr(reply, "empty", True)
         and not message.forward_from_chat
         and not reply.sender_chat
     ):
-        text += f"**[ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇ ɪᴅ:]({reply.link})** `{reply.id}`\n"
-        text += f"**[ʀᴇᴘʟɪᴇᴅ ᴜsᴇʀ ɪᴅ:](tg://user?id={reply.from_user.id})** `{reply.from_user.id}`\n\n"
+        text += f"**[ʀєρℓιє∂ мєѕѕєgє ι∂:]({reply.link})** `{reply.id}`\n"
+        text += f"**[ʀєρℓιє∂ υѕєʀ ι∂:](tg://user?id={reply.from_user.id})** `{reply.from_user.id}`\n\n"
 
     if reply and reply.forward_from_chat:
-        text += f"ᴛʜᴇ ғᴏʀᴡᴀʀᴅᴇᴅ ᴄʜᴀɴɴᴇʟ, {reply.forward_from_chat.title}, ʜᴀs ᴀɴ ɪᴅ ᴏғ `{reply.forward_from_chat.id}`\n\n"
+        text += f"тнє fσʀωαʀ∂є∂ ᴄнαииєℓ, {reply.forward_from_chat.title}, нαѕ αи ι∂ σf `{reply.forward_from_chat.id}`\n\n"
         print(reply.forward_from_chat)
 
     if reply and reply.sender_chat:
-        text += f"ɪᴅ ᴏғ ᴛʜᴇ ʀᴇᴘʟɪᴇᴅ ᴄʜᴀᴛ/ᴄʜᴀɴɴᴇʟ, ɪs `{reply.sender_chat.id}`"
+        text += f"ι∂ σf тнє ʀєρℓιє∂ ᴄнαт/ᴄнαииєℓ, ιѕ `{reply.sender_chat.id}`"
         print(reply.sender_chat)
 
     await message.reply_text(
